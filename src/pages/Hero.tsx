@@ -18,7 +18,7 @@ const HeroTitles = ({ title }: Props) => {
       <h2 className="text-2xl text-secondary lg:text-4xl text-center max-w-xs">
         {title}
       </h2>
-      <div className="flex h-[2px] w-2/3 my-2 bg-secondary"></div>
+      <div className="flex h-[1px] w-2/3 my-2 bg-secondary"></div>
     </div>
   );
 };
@@ -41,7 +41,7 @@ const Hero = (props: Props) => {
 
         {/* --------------Hero page couple section----------- */}
         <div className=" flex flex-col lg:flex-row mx-auto">
-          <div className="m-2 z-10 lg:w-[50%] mx-auto">
+          <div className="m-2 z-99 sm:z-10 lg:w-[50%] mx-auto">
             <Image src={heroCouple} alt="" />
           </div>
           <div className="lg:w-[60%] flex flex-col justify-center items-center text-secondary bg-off-white mx-auto lg:-translate-x-20 lg:translate-y-16 px-4 py-8">
@@ -74,7 +74,7 @@ const Hero = (props: Props) => {
             </div>
           </div>
           <div className="lg:w-1/2 text-center px-16 py-10">
-            <h2 className="text-2xl lg:text-4xl">VideoGraphy</h2>
+            <h2 className="text-2xl lg:text-4xl">Videography</h2>
             <p className="text-lg lg:text-2xl my-5 max-w-2xl mx-auto lg:px-8">
               Adipiscing mauris sed metus dictum eget morbi aliquet. Sit neque
               tempus eget dictum velit tristique.

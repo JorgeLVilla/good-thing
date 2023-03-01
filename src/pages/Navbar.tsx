@@ -14,21 +14,27 @@ const Navbar = () => {
   };
 
   return (
-    <main className="flex justify-around items-center py-5 text-secondary border">
+    <main className="flex justify-around items-center py-5 text-secondary">
       {/*-------------Desktop Menu--------------*/}
-      <div className="hidden sm:flex h-10 bg-black-500 w-48">
-        <hr className="bg-secondary h-0.5" />
+      <div className="hidden sm:flex h-[1px] w-1/6 my-2 bg-secondary"></div>
+      <div className="hidden sm:flex">
+        <Link href={"/"}>Home</Link>
       </div>
-      <div className="hidden sm:flex">Home</div>
-      <div className="hidden sm:flex">Packages</div>
+      <div className="hidden sm:flex">
+        <Link href={"Packages"}>Packages</Link>
+      </div>
       <div className="h-14">
-        <Image src={Logo} alt="good things logo" className="h-full w-full" />
+        <Link href={"/"}>
+          <Image src={Logo} alt="good things logo" className="h-full w-full" />
+        </Link>
       </div>
-      <div className="hidden sm:flex">About Us</div>
-      <div className="hidden sm:flex">Contact</div>
-      <div className="hidden sm:flex h-10 bg-black-500 w-48">
-        <hr className="hidden sm:flex bg-secondary h-0.5" />
+      <div className="hidden sm:flex">
+        <Link href={"AboutUs"}>About Us</Link>
       </div>
+      <div className="hidden sm:flex">
+        <Link href={"Contact"}>Contact</Link>
+      </div>
+      <div className="hidden sm:flex h-[1px] w-1/6 my-2 bg-secondary"></div>
       <div onClick={handleNavbar} className="sm:hidden text-4xl">
         <CgMenuRight />
       </div>
@@ -38,13 +44,15 @@ const Navbar = () => {
           navbarOpen ? "block" : "hidden"
         } fixed sm:hidden inset-0 bg-secondary h-screen text-off-white`}
       >
-        <section className="flex justify-around  items-center border mb-28">
+        <section className="flex justify-around  items-center mb-28">
           <div className="h-14 bg-white rounded flex items-center my-8">
-            <Image
-              src={Logo}
-              alt="good things logo"
-              className="h-full w-full"
-            />
+            <Link href={"/"} onClick={handleNavbar}>
+              <Image
+                src={Logo}
+                alt="good things logo"
+                className="h-full w-full"
+              />
+            </Link>
           </div>
           <div onClick={handleNavbar} className="text-4xl">
             <CgClose />
