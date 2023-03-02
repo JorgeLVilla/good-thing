@@ -4,18 +4,18 @@ const Contact = () => {
   return (
     <main className="flex-col">
       {/*-------------FIrst Container-------*/}
-      <div className="text-center flex-col items-center justify-center text-secondary">
-        <div className="hidden sm:flex h-14 w-[.25px] bg-secondary mx-auto my-5"></div>
-        <div className="text-sm uppercase">contact</div>
-        <div className="text-6xl py-2">
+      <div className="text-center flex-col items-center justify-center text-secondary mt-10">
+        <div className="sm:flex h-14 w-[.25px] bg-secondary mx-auto"></div>
+        <div className="pt-10 text-sm uppercase">contact</div>
+        <div className="text-5xl sm:text-6xl py-2">
           We look forward to connecting <br></br>with you!
         </div>
-        <p className="w-5/12 mx-auto py-2">
+        <p className="sm:w-5/12 mx-auto px-10 py-3 text-xl">
           Our goal and desire with Good Thing Media is to create a life lasting
           film that will not only serve as something to look back on, but a
           reminder on why you said the words, "I DO!"
         </p>
-        <div className="hidden sm:flex h-14 w-[.25px] bg-secondary mx-auto my-5"></div>
+        <div className="sm:flex h-14 w-[.25px] bg-secondary mx-auto my-5"></div>
       </div>
       {/*-------------Form Container-------*/}
 
@@ -75,13 +75,13 @@ const Contact = () => {
               type="text"
               id="message"
               placeholder="Event Details & Other Questions"
-              className="w-4/5 h-[200px] border-b-[1px] py-2"
+              className="w-full h-[200px] border-b-[1px] py-2"
             />
           </div>
           <div className="flex mt-10 h-[35px]">
             <button
               type="submit"
-              className="border w-full sm:w-1/5 mx-auto text-off-white bg-secondary"
+              className="border w-full sm:w-1/5 mx-auto text-off-white bg-secondary rounded"
             >
               Submit
             </button>
@@ -90,9 +90,27 @@ const Contact = () => {
       </div>
 
       {/*-------------Info Container-------*/}
-      <div className="pt-44">Info Container</div>
-
-      {/*-------test form --------*/}
+      <div className=""></div>
+      <section className=" lg:flex sm:flex-row justify-center text-2xl text-center mt-10 sm:py-24 ">
+        <div className="py-5 sm:px-24">
+          <h1>Address</h1>
+          <p className="text-secondary py-3">
+            84 Kingswood Dr,<br></br> San Diego, CA
+          </p>
+        </div>
+        <div className="py-5 sm:px-24">
+          <h1>Email</h1>
+          <p className="text-secondary py-3">
+            Email Us At:<br></br> info@sitegoodthing.com
+          </p>
+        </div>
+        <div className="py-5 sm:px-24">
+          <h1>Phone</h1>
+          <p className="text-secondary py-3">
+            Call Us At:<br></br> 800-534-1934
+          </p>
+        </div>
+      </section>
     </main>
   );
 };
