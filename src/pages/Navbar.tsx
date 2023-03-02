@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <main className="flex justify-around items-center py-5 text-secondary">
       {/*-------------Desktop Menu--------------*/}
-      <div className="hidden sm:flex h-[1px] w-1/6 my-2 bg-secondary"></div>
+      <div className="hidden sm:flex h-[.25px] w-1/6 my-2 bg-secondary"></div>
       <div className="hidden sm:flex">
         <Link href={"/"}>Home</Link>
       </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="hidden sm:flex">
         <Link href={"Contact"}>Contact</Link>
       </div>
-      <div className="hidden sm:flex h-[1px] w-1/6 my-2 bg-secondary"></div>
+      <div className="hidden sm:flex h-[.25px] w-1/6 my-2 bg-secondary"></div>
       <div onClick={handleNavbar} className="sm:hidden text-4xl">
         <CgMenuRight />
       </div>
