@@ -69,7 +69,7 @@ const Hero = (props: Props) => {
               Adipiscing mauris sed metus dictum eget morbi aliquet. Sit neque
               tempus eget dictum velit tristique.
             </p>
-            <div className="flex justify-center lg:justify-end lg:text-lg uppercase">
+            <div className="flex justify-center lg:justify-end lg:text-lg uppercase font-thin">
               <Link href="/">Learn more</Link>
             </div>
           </div>
@@ -79,7 +79,7 @@ const Hero = (props: Props) => {
               Adipiscing mauris sed metus dictum eget morbi aliquet. Sit neque
               tempus eget dictum velit tristique.
             </p>
-            <div className="flex justify-center lg:justify-end lg:text-lg uppercase">
+            <div className="flex justify-center lg:justify-end lg:text-lg uppercase font-thin">
               <Link href="/">Learn more</Link>
             </div>
           </div>
