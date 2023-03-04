@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Fraunces } from "@next/font/google";
 
 const fraunces = Fraunces({
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className={`bg-primary ${fraunces.variable} font-sans`}>
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </main>
   );
 }
