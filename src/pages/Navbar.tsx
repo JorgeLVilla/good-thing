@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../assets/logo2.png";
+import WhiteLogo from "../assets/whiteLogo.png";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import { SlSocialInstagram, SlSocialFacebook } from "react-icons/sl";
 import { NAV__LINKS } from "@/assets/data/navData";
@@ -45,10 +46,10 @@ const Navbar = () => {
         } fixed sm:hidden inset-0 bg-secondary h-screen text-off-white`}
       >
         <section className="flex justify-around  items-center mb-28">
-          <div className="h-14 bg-white rounded flex items-center my-8">
+          <div className="h-14 w-32 rounded flex items-center my-8">
             <Link href={"/"} onClick={handleNavbar}>
               <Image
-                src={Logo}
+                src={WhiteLogo}
                 alt="good things logo"
                 className="h-full w-full"
               />

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <main className="text-center text-2xl ">
       <div className="sm:flex w-4/5 h-[.25px] bg-secondary mx-auto"></div>
-      <div className="sm:flex sm:justify-around">
+      <div className="sm:flex sm:justify-around sm:py-5">
         <div className="my-5 py-1 sm:w-1/3 sm:pl-24">
           <h1>Social</h1>
           <p className="text-xl py-1 text-secondary">Facebook</p>
