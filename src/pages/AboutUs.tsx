@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import heroCouple from "../assets/heroCouple.png";
+import couplePic from "../assets/couplePic.jpg";
 
 const AboutUs = () => {
   return (
@@ -25,7 +26,7 @@ const AboutUs = () => {
       <section className="sm:w-4/5 sm:mx-auto lg:mb-36">
         <div className="flex flex-col sm:flex-row mx-auto">
           <div className="m-2 z-99 sm:z-10 lg:w-[50%] mx-4 sm:mx-auto">
-            <Image src={heroCouple} alt="" />
+            <Image src={couplePic} alt="" />
           </div>
           <div className="lg:w-[60%] flex flex-col justify-center items-center text-secondary bg-off-white mx-4 sm:mx-auto mb-10 lg:-translate-x-20 lg:translate-y-16 px-4 sm:py-8">
             <div className="lg:max-w-sm py-3 sm:py-6">
