@@ -91,7 +91,7 @@ const Contact = () => {
 
       {/*-------------Info Container-------*/}
       <div className=""></div>
-      <section className=" lg:flex sm:flex-row justify-center text-2xl text-center mt-10 sm:py-24 ">
+      <section className=" lg:flex sm:flex-row justify-center text-2xl text-center mt-10 sm:py-10">
         <div className="py-5 sm:px-24">
           <h1>Address</h1>
           <p className="text-secondary py-3">
