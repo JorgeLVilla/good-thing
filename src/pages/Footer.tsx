@@ -19,7 +19,7 @@ const Footer = () => {
           <p className="text-xl py-1 text-secondary">Wolftown Studios</p>
         </div>
       </div>
-      <div className="sm:flex w-4/5 h-[.25px] bg-secondary mx-auto mb-5"></div>
+      {/* <div className="sm:flex w-4/5 h-[.25px] bg-secondary mx-auto mb-5"></div> */}
       <div className="sm:flex sm:justify-center sm:mx-10 pb-5">
         <div className="text-xs">
           ©2023 Jorge Villalobos, All Rights Reserved
