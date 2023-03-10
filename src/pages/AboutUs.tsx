@@ -14,9 +14,9 @@ const AboutUs = () => {
             Weave story into every thread of <br></br>your event
           </div>
           <p className="sm:w-5/12 mx-auto px-8 py-3 text-xl">
-            Our goal and desire with Good Thing Media is to create a life
+            {`Our goal and desire with Good Thing Media is to create a life
             lasting film that will not only serve as something to look back on,
-            but a reminder on why you said the words, "I DO!"
+            but a reminder on why you said the words, "I DO!"`}
           </p>
           <div className="sm:flex h-14 w-[.25px] bg-secondary mx-auto my-5"></div>
         </div>
@@ -37,13 +37,13 @@ const AboutUs = () => {
                 Who is behind the lens?
               </h2>
               <p className="text-lg sm:text-xl lg:text-2xl font-light leading-8 lg:leading-normal lg:max-w-md">
-                What if we could capture a special moment in time filled with
+                {`What if we could capture a special moment in time filled with
                 raw emotions, a once in a lifetime event, or even loved ones
                 that may no longer be with us in 20 years? Well, we can!
                 Videography is more than just "recording" your once in a
                 lifetime event. Overall, our hope with this film is for it to be
                 a reminder on why you said "YES" to marrying your best friend!
-                Let's Film!
+                Let's Film!`}
               </p>
             </div>
           </div>
