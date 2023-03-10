@@ -54,13 +54,13 @@ const Hero = (props: Props) => {
                 Who is behind the lens?
               </h2>
               <p className="text-lg sm:text-xl lg:text-2xl font-light leading-8 lg:leading-normal lg:max-w-md">
-                What if we could capture a special moment in time filled with
+                {`What if we could capture a special moment in time filled with
                 raw emotions, a once in a lifetime event, or even loved ones
                 that may no longer be with us in 20 years? Well, we can!
                 Videography is more than just "recording" your once in a
                 lifetime event. Overall, our hope with this film is for it to be
                 a reminder on why you said "YES" to marrying your best friend!
-                Let's Film!
+                Let's Film!`}
               </p>
             </div>
           </div>
@@ -81,9 +81,9 @@ const Hero = (props: Props) => {
           <div className="lg:w-full text-center px-16 py-10">
             <h2 className="text-2xl lg:text-4xl">Videography</h2>
             <p className="text-lg lg:text-2xl my-5 max-w-2xl mx-auto lg:px-8">
-              Videography is more than just "recording" your once in a lifetime
+              {`Videography is more than just "recording" your once in a lifetime
               event. Overall, our hope with this film is for it to be a reminder
-              on why you said "YES" to marrying your best friend! Let's Film!
+              on why you said "YES" to marrying your best friend! Let's Film!`}
             </p>
             <div className="flex justify-center lg:justify-end lg:text-lg uppercase font-thin">
               <Link href="/">Learn more</Link>

@@ -13,9 +13,9 @@ const Packages = () => {
         <div className="pt-10 text-sm uppercase">services</div>
         <div className="text-5xl sm:text-6xl py-2">Our Services</div>
         <p className="sm:w-5/12 mx-auto px-10 py-3 text-xl">
-          Videography is more than just "recording" your once in a lifetime
+          {`Videography is more than just "recording" your once in a lifetime
           event. Overall, our hope with this film is for it to be a reminder on
-          why you said "YES" to marrying your best friend! Let's Film!
+          why you said "YES" to marrying your best friend! Let's Film!`}
         </p>
         <div className="sm:flex h-14 w-[.25px] bg-secondary mx-auto my-5"></div>
       </div>

@@ -11,9 +11,9 @@ const Contact = () => {
           We look forward to connecting <br></br>with you!
         </div>
         <p className="sm:w-5/12 mx-auto px-10 py-3 text-xl">
-          Our goal and desire with Good Thing Media is to create a life lasting
+          {` Our goal and desire with Good Thing Media is to create a life lasting
           film that will not only serve as something to look back on, but a
-          reminder on why you said the words, "I DO!"
+          reminder on why you said the words, "I DO!"`}
         </p>
         <div className="sm:flex h-14 w-[.25px] bg-secondary mx-auto my-5"></div>
       </div>
