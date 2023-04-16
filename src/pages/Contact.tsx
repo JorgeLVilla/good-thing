@@ -123,7 +123,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex mt-10 h-[35px]">
-            {showSuccess && <div>Form submitted successfully!</div>}
+            {showSuccess && <div>Thank you for getting in touch!</div>}
             <button
               type="submit"
               className="border w-full sm:w-1/5 mx-auto text-off-white bg-secondary rounded"
