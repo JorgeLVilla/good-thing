@@ -11,7 +11,7 @@ const fraunces = Fraunces({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`bg-primary ${fraunces.variable} font-sans`}>
+    <main className={`bg-primary ${fraunces.variable}`}>
       <Navbar />
       <Component {...pageProps} />
       <Footer />

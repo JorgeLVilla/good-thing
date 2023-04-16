@@ -13,6 +13,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-fraunces)']
+      },
+      backgroundImage: {
+        'hero-pattern': 'url("../assets/flowerBack.png")',
       }
     },
   },
