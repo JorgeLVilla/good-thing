@@ -1,6 +1,38 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   // code to submit form data
+  //   setShowSuccess(true);
+  // };
+
+  const form = useRef();
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_i0j1tq8",
+        "template_mx1at3n",
+        e.target,
+        "jxEWs130IXMhkNE2J"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    setShowSuccess(true);
+  };
+
   return (
     <main className="flex-col">
       {/*-------------FIrst Container-------*/}
@@ -20,13 +52,19 @@ const Contact = () => {
       {/*-------------Form Container-------*/}
 
       <div className="bg-off-white m-8 sm:mx-16 px-12 text-secondary text-sm font-light">
-        <form action="/send-data-here" method="post" className="py-10">
+        <form
+          onSubmit={sendEmail}
+          action="/send-data-here"
+          method="post"
+          className="py-10"
+        >
           <div className="flex-wrap sm:flex">
             <div className="w-full sm:w-3/6">
               <div className="mt-10">First name:</div>
               <input
                 type="text"
                 id="first"
+                name="first_name"
                 placeholder="First Name"
                 className="w-4/5 border-b-[1px] py-2"
               />
@@ -34,6 +72,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="last"
+                name="last_name"
                 placeholder="Last Name"
                 className="w-4/5 border-b-[1px] py-2"
               />
@@ -41,6 +80,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="email"
+                name="email"
                 placeholder="Email"
                 className="w-4/5 border-b-[1px] py-2"
               />
@@ -50,6 +90,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="phone"
+                name="phone"
                 placeholder="Phone Number"
                 className="w-4/5 border-b-[1px] py-2"
               />
@@ -57,6 +98,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="event-type"
+                name="event_type"
                 placeholder="Event Type"
                 className="w-4/5 border-b-[1px] py-2"
               />
@@ -64,6 +106,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="location"
+                name="location"
                 placeholder="Location (State or Country)"
                 className="w-4/5 border-b-[1px] py-2"
               />
@@ -74,11 +117,13 @@ const Contact = () => {
             <input
               type="text"
               id="message"
+              name="message"
               placeholder="Event Details & Other Questions"
               className="w-full h-[200px] border-b-[1px] py-2"
             />
           </div>
           <div className="flex mt-10 h-[35px]">
+            {showSuccess && <div>Form submitted successfully!</div>}
             <button
               type="submit"
               className="border w-full sm:w-1/5 mx-auto text-off-white bg-secondary rounded"
@@ -93,21 +138,19 @@ const Contact = () => {
       <div className=""></div>
       <section className=" lg:flex sm:flex-row justify-center text-2xl text-center mt-10 sm:py-10">
         <div className="py-5 sm:px-24">
-          <h1>Address</h1>
-          <p className="text-secondary py-3">
-            84 Kingswood Dr,<br></br> San Diego, CA
-          </p>
+          <h1>Located In</h1>
+          <p className="text-secondary py-3">San Diego, CA</p>
         </div>
         <div className="py-5 sm:px-24">
           <h1>Email</h1>
           <p className="text-secondary py-3">
-            Email Us At:<br></br> info@sitegoodthing.com
+            Email Us At:<br></br> Goodthingmedia@gmail.com
           </p>
         </div>
         <div className="py-5 sm:px-24">
           <h1>Phone</h1>
           <p className="text-secondary py-3">
-            Call Us At:<br></br> 800-534-1934
+            Call Us At:<br></br> 1-619-882-9847
           </p>
         </div>
       </section>

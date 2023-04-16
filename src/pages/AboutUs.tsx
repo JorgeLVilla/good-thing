@@ -37,13 +37,8 @@ const AboutUs = () => {
                 Who is behind the lens?
               </h2>
               <p className="text-lg sm:text-xl lg:text-2xl font-light leading-8 lg:leading-normal lg:max-w-md">
-                {`What if we could capture a special moment in time filled with
-                raw emotions, a once in a lifetime event, or even loved ones
-                that may no longer be with us in 20 years? Well, we can!
-                Videography is more than just "recording" your once in a
-                lifetime event. Overall, our hope with this film is for it to be
-                a reminder on why you said "YES" to marrying your best friend!
-                Let's Film!`}
+                {`What if we could capture a special moment in time filled with raw emotions, a once in a lifetime event, or even loved ones that may no longer be with us in 20 years? 
+It’s not just about pressing "record” and letting the cameras run.  Our goal with your film is for it to serve as a reminder on why you said, “Yes!” to marrying your best friend!`}
               </p>
             </div>
           </div>

@@ -10,21 +10,21 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const mobileVariant = {
   hidden: {
-    y: "-100vh"
+    y: "-100vh",
   },
   visible: {
     y: 0,
     transition: {
-      duration: 1
-    }
+      duration: 1,
+    },
   },
   exit: {
-    y:"-100vh",
+    y: "-100vh",
     transition: {
-      duration: 1
-    }
-  }
-}
+      duration: 1,
+    },
+  },
+};
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <main className="flex justify-around items-center py-5 text-secondary">
+    <main className="flex justify-around items-center py-5 lg:py-12 text-secondary">
       {/*-------------Desktop Menu--------------*/}
       <div className="hidden sm:flex h-[.25px] w-1/6 my-2 bg-secondary"></div>
       <div className="hidden sm:flex">
@@ -62,11 +62,12 @@ const Navbar = () => {
       <AnimatePresence>
         {navbarOpen && (
           <motion.div
-          variants={mobileVariant}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          className="block fixed sm:hidden inset-0 bg-secondary h-screen text-off-white">
+            variants={mobileVariant}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="block fixed sm:hidden inset-0 bg-secondary h-screen text-off-white z-10"
+          >
             <section className="flex justify-around  items-center mb-28">
               <div className="h-14 w-32 rounded flex items-center my-8">
                 <Link href={"/"} onClick={handleNavbar}>
